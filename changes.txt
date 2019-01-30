@@ -1,0 +1,4 @@
+2017/12/03 Opgeleverd
+2017/12/06 Bugfix: If mergcolumn cell is empty, ignore the row. This used to break the application since merge conflicts arose.
+2018/08/07 Bugfix: Megecolumn: using a capital in Mergecolumn argument did not work. Since we .lower() all column headers, the mergecolumn should also be .lower()ed. And so is done.
+2018/08/07 Bugfix: Columns with length 1 were not added into merge. Fixed it by checking for column length being >=1. 
